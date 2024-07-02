@@ -2,7 +2,7 @@ services:
   nginx:
     build: ./.docker/nginx
     ports:
-      - 80:80
+      - ${PORT:-8080}:80
     volumes:
       - ./.docker/nginx/conf.d:/etc/nginx/conf.d
       - ./html:/var/www/html
