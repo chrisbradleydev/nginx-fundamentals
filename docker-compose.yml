@@ -1,5 +1,5 @@
 services:
-  nginx:
+  app:
     build: ./.docker/nginx
     ports:
       - ${PORT:-8080}:80
